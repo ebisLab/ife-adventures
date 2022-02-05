@@ -1,0 +1,1 @@
+export const title= "Ife's Adventures"
