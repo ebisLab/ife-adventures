@@ -22,26 +22,26 @@ export default function Gallery() {
           backgroundPosition: '50% 60%',
           backgroundImage: `url("./img/img1_ife.png")`}} 
         //   style={{width: '300px', height:'100px', padding: '1%', margin:'5%', border:'5px solid white'}}
-          >Hard Cover books</div>
+          ><span style={{background: '#ffffffb0'}}>Hard Cover books</span></div>
           <div
           style={{flex: '0 32%', height: '100px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
           backgroundPosition: '50% 50%',
           backgroundImage: `url("./img/img3_ife_edge.png")`}} 
         //   style={{width: '300px', height:'100px', padding: '1%', margin:'5%', border:'5px solid white'}}
-          >Coloring Books</div>
+          ><span style={{background: '#ffffffb0'}}>Coloring Books</span></div>
           <div
           style={{flex: '0 32%', height: '100px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
           backgroundPosition: '50% 50%',
           backgroundImage: `url("./img/img4_ife.png")`,
         }} 
         //   style={{width: '300px', height:'100px', padding: '1%', margin:'5%', border:'5px solid white'}}
-          >Merch</div>
+          ><span style={{background: '#ffffffb0'}}>Merch</span></div>
           <div
           style={{flex: '0 32%', height: '100px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
           // backgroundPosition: '50% 50%',
           backgroundImage: `url("./img/img2_ife.png")`}} 
         //   style={{width: '300px', height:'100px', padding: '1%', margin:'5%', border:'5px solid white'}}
-          >Resources</div>
+          ><span style={{background: '#ffffffb0'}}>Resources</span></div>
 
       </div>
 

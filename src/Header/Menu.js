@@ -8,7 +8,7 @@ export default function Menu() {
         <li style={{display: 'inline', fontFamily: 'Lato, sans-serif', fontSize: '30px'}}>{title}</li>
           <li style={{display: 'inline', padding: '0 5%'}}><a style={{textDecoration: 'none'}} href="">Home</a></li>
           <li style={{display: 'inline', padding: '0 5%'}}><a style={{textDecoration: 'none'}} href="">Blog</a></li>
-          <li style={{display: 'inline', padding: '0 5%'}}><a style={{textDecoration: 'none'}} href="">Characters</a></li>
+          <li style={{display: 'inline', padding: '0 5%'}}><a style={{textDecoration: 'none'}} href="">Shop</a></li>
           <li style={{display: 'inline', padding: '0 5%'}}><a style={{textDecoration: 'none'}} href="">Contact Us</a></li>
       </ul>
   </div>

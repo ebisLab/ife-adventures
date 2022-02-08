@@ -8,7 +8,6 @@ export default function Header() {
   return (
   <div style={{height: '90vh', width: '100%', backgroundColor: 'orangered'}}>
       <Menu/>
-      {/* <img style={{marginTop:'3%', width: '70%'}} src="./img/img6_ife-nobg1.png"/> */}
       
       <div style={{display: 'inline-flex', marginTop: '5%'}}>
       <Illustration2/>
@@ -17,6 +16,8 @@ export default function Header() {
       <Illustration2/>
       <Illustration3/>
         </div>
+        <div>Work in progress, animated characters on hover</div>
+
    
 
   </div>);
