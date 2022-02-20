@@ -1,7 +1,56 @@
 import React from 'react';
-import {title} from '../utils'
+import {title} from '../utils';
+
+import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 export default function MailList() {
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
+
+
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,  
+      draggable: false,
+      className: 'submit-feedback success',
+      toastId: 'notifyToast'
+    });
+  };
+
+  const onSubmit = async (data) => {
+    const { name, email, subject, message } = data;
+    try {
+      const templateParams = {
+        name,
+        email,
+        subject,
+        message
+      };
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_USER_ID
+      );
+      reset();
+      toastifySuccess();
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
   <div style={{padding: '5%'}}>
     <div 
@@ -46,7 +95,9 @@ export default function MailList() {
       </form> */}
 
       <div>
-        <form style={{            
+        <form 
+        onSubmit={handleSubmit(onSubmit)} noValidate
+        style={{            
           width: '75%',
           margin: 'auto'
 }}>
@@ -62,8 +113,17 @@ export default function MailList() {
           }}
           >
             <input 
+            type="text"
             className='mailinglist'
             placeholder='Your name'
+            name='name'
+            {...register('name', {
+              required: { value: true, message: 'Please enter your name' },
+              maxLength: {
+                value: 30,
+                message: 'Please use 30 characters or less'
+              }
+            })}
             style={{
               border: 'none',
               fontSize: '13px',
@@ -72,9 +132,16 @@ export default function MailList() {
               transition: 'all .15s ease-in',
             }}
             />
+            {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
             <input 
+            type="text"
             className='mailinglist'
             placeholder='Your email'
+            name='email'
+            {...register('email', {
+              required: true,
+              pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+            })}
             style={{
               border: 'none',
               fontSize: '13px',
@@ -83,7 +150,11 @@ export default function MailList() {
               transition: 'all .15s ease-in',
             }}
             />
+            {errors.email && (
+              <span className='errorMessage'>Please enter a valid email address</span>
+            )}
             <button
+            type="submit"
             style={{
               // height: '3em',
               width: '100px',
@@ -99,6 +170,7 @@ export default function MailList() {
           </div>
         </form>
       </div>
+      <ToastContainer/>
       </div>
 
 
