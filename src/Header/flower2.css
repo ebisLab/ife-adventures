@@ -1,0 +1,96 @@
+@keyframes petals {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes wind1 {
+	0% {
+		transform: scale(0.38) rotate(-65deg);
+	}
+	50% {
+		transform: scale(0.38) rotate(-70deg);
+	}
+	100% {
+		transform: scale(0.38) rotate(-65deg);
+	}
+}
+@keyframes wind2 {
+	0% {
+		transform: scale(0.30) rotate(15deg);
+	}
+	45% {
+		transform: scale(0.30) rotate(20deg);
+	}
+	100% {
+		transform: scale(0.30) rotate(15deg);
+	}
+}
+
+.flower {
+	/* margin-top: 60px; */
+  /* margin-left: 45%; */
+  display: unset;
+  position: absolute;
+  bottom: 0;
+}
+
+.petals {
+	border-radius: 100%;
+	display: inline-block;
+	background-color: #faaa18;
+	height: 50px;
+	width: 50px;
+	box-shadow: 15px 17px #ffe000,
+				      -15px 17px #ffe000,
+				      -22px -7px #ffe000,
+              0px -22px #ffe000,
+              22px -7px #ffe000;
+	margin-bottom: -16px;
+	margin-left: 40px;
+	animation: petals 60s linear infinite;
+}
+.leaf1 {
+	width: 80px;
+	height: 140px;
+	background-image: linear-gradient(to top left, #9ACC39 50%,           transparent 50%, transparent 50%, #AFB635 50%);
+	-moz-border-radius: 100% / 100px 0px;
+	-webkit-border-radius: 100% / 100px 0px;
+	border-radius: 100% 0 / 100px 0px;
+	transform: scale(0.38) rotate(-65deg);
+	margin-top: -151px;
+	margin-bottom: 0px;
+	margin-left: 63px;
+	transform-origin: 0 140px;
+	animation: wind1 5.0s ease-in-out infinite;
+}
+.leaf2 {
+	width: 80px;
+	height: 140px;
+	background-image: linear-gradient(to top left, #9ACC39 50%, transparent 50%, transparent 50%, #AFB635 50%);
+	-moz-border-radius: 100% / 100px 0px;
+	-webkit-border-radius: 100% / 100px 0px;
+	border-radius: 100% 0 / 100px 0px;
+	transform: scale(0.30) rotate(15deg);
+	margin-top: -165px;
+	margin-bottom: 34px;
+	margin-left: 63px;
+	animation: wind2 3s ease-in-out infinite;
+	transform-origin: 0 140px;
+}
+.stick {
+	border-left: 6px solid #9ACC39;
+	height: 110px;
+	margin-left: 62px;
+}
+.border {
+	width: 146px;
+	margin-left: -9px;
+	margin-bottom: -1px;
+	border-radius: 30px;
+	border-top: 12px solid #D66C06;
+	border-bottom: 12px solid #D66C06;
+	z-index: 9;
+}
