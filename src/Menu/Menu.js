@@ -12,9 +12,10 @@ export default function Menu() {
             </li>
           {/* <li style={{display: 'inline', padding: '0 5%'}}><a style={{textDecoration: 'none'}} href="">Blog</a></li> */}
           <li style={{display: 'inline', padding: '0 5%'}}>
-            <a style={{textDecoration: 'none'}} href="">Shop</a></li>
-          <li style={{display: 'inline', padding: '0 5%'}}>
-            <a style={{textDecoration: 'none'}} href="">Contact Us</a></li>
+          <Link to="/shop" style={{textDecoration: 'none'}}> Shop </Link>
+            </li>
+          {/* <li style={{display: 'inline', padding: '0 5%'}}>
+            <a style={{textDecoration: 'none'}} href="">Contact Us</a></li> */}
       </ul>
   </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Gallery() {
   return (
@@ -11,18 +12,18 @@ export default function Gallery() {
             // backgroundImage: `url("./img/img1_ife.png")`, 
             // height: '100px', width: '100%'
             }}> */}
-              <img src="./img/img1_ife.png" width="100%" />
+              <Link to="/shop"><img src="./img/img1_ife.png" width="100%" /></Link>
 
           {/* </div> */}
       </div>
       <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>
           {/* div[style={{width:'33%'}}] */}
-          <div
+          <Link to="/shop"
           style={{flex: '0 32%', height: '100px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
           backgroundPosition: '50% 60%',
           backgroundImage: `url("./img/img1_ife.png")`}} 
         //   style={{width: '300px', height:'100px', padding: '1%', margin:'5%', border:'5px solid white'}}
-          ><span style={{background: '#ffffffb0'}}>Hard Cover books</span></div>
+          ><span style={{background: '#ffffffb0'}}>Hard Cover books</span></Link>
           <div
           style={{flex: '0 32%', height: '100px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
           backgroundPosition: '50% 50%',
