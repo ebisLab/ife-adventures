@@ -36,7 +36,8 @@ export default function MailList() {
         name,
         email,
         subject,
-        message
+        message,
+        reply_to: 'Dr. Tee-Tee'
       };
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
