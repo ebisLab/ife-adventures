@@ -14,7 +14,8 @@ export default function Shop() {
                 <h3>Synopsis</h3>
 
                 <p>
-                Ife adventures teaches how to listen, learn from and forgive each other. While Ife interacts with her friends, she learns about their customs and ways of life from fashion, dance and food and forms a greater appreciation of her environment.
+                Book#1 of the Ife Adventure series
+It's Ife's first day in school and there are many new friends and new things to learn. But will a misunderstanding with Wohali and an encounter with the Brute Twins ruin her day?
                 </p>
                 </div>
             <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>

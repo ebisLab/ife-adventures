@@ -17,7 +17,8 @@ export default function About() {
     //   style={{paddingRight: '55%'}}
       >
         <p>{title} is a children's book by {author}.</p>
-        <p>Ife adventures teaches how to listen, learn from and forgive each other. While Ife interacts with her friends, she learns about their customs and ways of life from fashion, dance and food and forms a greater appreciation of her environment. </p>
+        <p>
+        Ife's Adventure series is semi-autobiography told through the eyes of the Nigerian-American girl, Ife. Ife guides the reader through numerous adventures she and her family & friends (Chinye, Wohali, Maryamm, Haru, Ramon, Deepa, John, Fiona, and many more)  get into. Readers will be engaged by the characters' stories, trials, and successes while at the same time learning life lessons and values.        </p>
       </div>
   </div>;
 }
