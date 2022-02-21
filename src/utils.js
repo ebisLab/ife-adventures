@@ -1,2 +1,2 @@
 export const title= "Ife's Adventures";
-export const author = "Dr. Tee-tee"
+export const author = "Dr. Tee-Tee"

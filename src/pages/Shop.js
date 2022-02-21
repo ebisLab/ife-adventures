@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {title} from '../utils'
+
 
 export default function Shop() {
     return (
@@ -11,11 +13,10 @@ export default function Shop() {
             </div>
             <div style={{padding: '2%', width: '450px'}}>
                 <div style={{background: 'dodgerblue', padding: '5%'}}>
-                <h3>Synopsis</h3>
+                <h3>Synopsis of Book #1 of {title} </h3>
 
                 <p>
-                Book#1 of the Ife Adventure series
-It's Ife's first day in school and there are many new friends and new things to learn. But will a misunderstanding with Wohali and an encounter with the Brute Twins ruin her day?
+It's Ife's first day in school and there are many new things that Ife is learning. But will a misunderstanding with Wohali and an encounter with the Brute Twins ruin her day?
                 </p>
                 </div>
             <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>
