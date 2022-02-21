@@ -16,7 +16,7 @@ export default function Gallery() {
 
           {/* </div> */}
       </div>
-      <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>
+      <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between', background: 'dodgerblue'}}>
           {/* div[style={{width:'33%'}}] */}
           <Link to="/shop"
           style={{flex: '0 32%', height: '100px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',

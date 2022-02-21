@@ -1,5 +1,5 @@
 import React from 'react';
-import {title} from '../utils'
+import {title, author} from '../utils'
 
 export default function Footer() {
   return <div style={{backgroundColor: 'black', display: 'inline-flex'}}>
@@ -12,7 +12,8 @@ export default function Footer() {
           </ul> */}
       </div>
       <div style={{color: 'white'}}>
-          <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A DrTiti Publication. All Rights Reserved. {title}.com is part of DrTiti Network.</p>
+          <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A {author} Publication. 
+          All Rights Reserved. {title}.com is part of {author} Network.</p>
       </div>
 
   </div>;

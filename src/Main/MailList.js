@@ -59,11 +59,11 @@ export default function MailList() {
             margin: '0 14%',
             padding: '4%',
             borderRadius: '10px',
-          boxShadow: '0px 0px 10px #5a7c2d'}}
+          boxShadow: '0px 0px 10px rgb(129 175 69)'}}
     >
       <div style={{padding: '2%'}}>
         <h1>Mailing List</h1>
-        Want to stay updated on the next {title}? Sign up in our mailing list, and you might get a sweet deal. 
+        Sign up in our mailing list to stay updated on the next {title}. 
         </div>
       {/* <form 
       >
@@ -105,9 +105,9 @@ export default function MailList() {
           style={{
             // height: '3em',
             border: '1px solid rgb(220, 219, 235)',
-            borderRadius: '4px',
+            borderRadius: '20px',
             fontSize: '13px',
-            padding: '10px',
+            padding: '10px 0px 10px 80px',
             color: '#000',
             transition: 'all .15s ease-in',
           }}

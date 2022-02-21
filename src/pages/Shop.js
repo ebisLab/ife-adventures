@@ -10,8 +10,8 @@ export default function Shop() {
                 {/* </div> */}
             </div>
             <div style={{padding: '2%', width: '450px'}}>
-                <h3>Synopsis</h3>
-                <p>
+                <h3 style={{background: 'dodgerblue'}}>Synopsis</h3>
+                <p style={{background: 'dodgerblue', padding: '5%'}}>
                 Ife adventures teaches how to listen, learn from and forgive each other. While Ife interacts with her friends, she learns about their customs and ways of life from fashion, dance and food and forms a greater appreciation of her environment.
                 </p>
             <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>
