@@ -5,7 +5,7 @@ export default function Shop() {
         <div style={{display: 'inline-flex', 
         padding: '5%'}}>
             <div style={{width: '43%'}}>
-                    <img src="./img/img1_ife.png" width="100%" />
+                    <img src="./img/img0_life.png" width="100%" />
       
                 {/* </div> */}
             </div>
