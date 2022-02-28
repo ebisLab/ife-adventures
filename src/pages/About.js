@@ -2,6 +2,12 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div>About this crazy page</div>
+    <div>
+                  <div style={{width: '63%', display: 'inline-flex',
+    justifyContent: 'center'}}>
+                    <img src="./img/img7_ife.png" width="100%" />
+      
+            </div>
+    </div>
   )
 }
