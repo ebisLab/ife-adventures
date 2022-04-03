@@ -1,4 +1,6 @@
 import React from 'react';
+import Arrow from '../Header/components/Arrow/Arrow';
+import Input from '../Header/Input';
 import {title} from '../utils'
 
 
@@ -21,7 +23,8 @@ It's Ife's first day in school and there are many new things that Ife is learnin
                 </div>
             <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>
                 {/* div[style={{width:'33%'}}] */}
-                <div
+                {/* the buy buttons */}
+                {/* <div
                 style={{flex: '0 32%',  margin: '3% 5%', padding: '1%' }} 
                 >
                     <button style={{
@@ -42,8 +45,11 @@ It's Ife's first day in school and there are many new things that Ife is learnin
                         width: '150px',
                         height:' 70px',
                     }}>Buy on Barnes and Nobles</button>
-                </div>
+                </div> */}
 
+                {/* <div>hey there</div> */}
+<Input/>
+<Arrow/>
 
       
             </div>

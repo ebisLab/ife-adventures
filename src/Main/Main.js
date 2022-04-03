@@ -6,7 +6,7 @@ import MailList from './MailList';
 function Main() {
   return (
   <div style={{backgroundColor: '#a8cb7a'}}>
-      <MailList/>
+      {/* <MailList/> */}
       {/* <Gallery/> */}
       <About/>
   </div>

@@ -7,6 +7,8 @@ import Menu from './Menu/Menu';
 import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shop';
+import BooksInSeries from './pages/BooksInSeries';
+import BibleInspiration from './pages/BibleInspiration';
 
 
 function App() {
@@ -24,8 +26,15 @@ function App() {
       <Route path="/about">
         <About/>
       </Route>
+      <Route path="/books-in-series">
+        <BooksInSeries/>
+      </Route>
+      <Route path="/biblical-inspiration">
+        <BibleInspiration/>
+      </Route>
 
       </Switch>
+      <Footer />
     </div>
     </Route>
   );
