@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BibleInspiration() {
   return (
-    <div style={{padding: '5% 15% 5%'}}>
+    <div style={{padding: '5% 15% 5%', background: 'white'}}>
         <div style={{display: 'inline-flex', padding: '1%'}}>
             <div style={{width: '200px', height: '250px', background: 'grey', border:'5px solid limegreen'}}></div>
             <div style={{width: '350px'}}>

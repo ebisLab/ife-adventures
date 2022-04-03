@@ -21,7 +21,9 @@ export default function Shop() {
 It's Ife's first day in school and there are many new things that Ife is learning. But will a misunderstanding with Wohali and an encounter with the Brute Twins ruin her day?
                 </p>
                 </div>
-            <div style={{display: 'flex', flexWrap: 'wrap',justifyContent: 'space-between'}}>
+            <div style={{
+                // display: 'flex', 
+            flexWrap: 'wrap',justifyContent: 'space-between'}}>
                 {/* div[style={{width:'33%'}}] */}
                 {/* the buy buttons */}
                 {/* <div

@@ -9,6 +9,8 @@ import About from './pages/About';
 import Shop from './pages/Shop';
 import BooksInSeries from './pages/BooksInSeries';
 import BibleInspiration from './pages/BibleInspiration';
+import Contact from './pages/Contact';
+import Products from './pages/Products';
 
 
 function App() {
@@ -31,6 +33,12 @@ function App() {
       </Route>
       <Route path="/biblical-inspiration">
         <BibleInspiration/>
+      </Route>
+      <Route path="/contact">
+        <Contact/>
+      </Route>
+      <Route path="/products">
+        <Products/>
       </Route>
 
       </Switch>

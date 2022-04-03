@@ -22,7 +22,10 @@ export default function Menu() {
             <a href="https://ifesinsightsandadventures.blogspot.com" style={{textDecoration: 'none'}}> Ife Journal Entries</a>
             </li>
             <li style={{display: 'inline', padding: '0 2%'}}>
-            <Link to="/about" style={{textDecoration: 'none'}}> Products</Link>
+            <Link to="/products" style={{textDecoration: 'none'}}> Products</Link>
+            </li>
+            <li style={{display: 'inline', padding: '0 2%'}}>
+            <Link to="/contact" style={{textDecoration: 'none'}}> Contact</Link>
             </li>
             {/* <li style={{display: 'inline', padding: '0 2%'}}>
             <Link to="/about" style={{textDecoration: 'none'}}> DrTeeTee on Youtube</Link>

@@ -159,6 +159,7 @@ export default function MailList() {
             style={{
               // height: '3em',
               width: '100px',
+              cursor: 'pointer',
               border: 'none',
               borderRadius: '10px',
               fontSize: '13px',

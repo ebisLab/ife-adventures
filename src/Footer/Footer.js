@@ -3,7 +3,7 @@ import {title, author} from '../utils'
 
 export default function Footer() {
   return (
-  <div><div style={{backgroundColor: 'black', display: 'inline-flex'}}>
+  <div style={{backgroundColor: 'black'}} ><div style={{backgroundColor: 'black', display: 'inline-flex'}}>
       <div style={{color: 'white', width:"33%"}}>
           {/* <ul style={{listStyleType: 'none'}}>
               <li><a href="">Privacy Policy</a></li>
