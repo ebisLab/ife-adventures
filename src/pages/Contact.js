@@ -68,7 +68,7 @@ export default function Contact() {
           message: 'Please use 30 characters or less'
         }
       })}/>
-    {errors.fname && <span className='errorMessage'>{errors.fname.message}</span>}
+    {errors.fname && <div style={{color: 'BE5F4B'}} className='errorMessage errPlacement'>{errors.fname.message}</div>}
 
 
     <label for="lname">Last Name</label>
@@ -80,7 +80,7 @@ export default function Contact() {
               message: 'Please use 30 characters or less'
             }
           })}/>
-              {errors.lname && <span className='errorMessage'>{errors.lname.message}</span>}
+              {errors.lname && <div className='errorMessage errPlacement'>{errors.lname.message}</div>}
 
 
     <label for="email">Email</label>
@@ -90,7 +90,7 @@ export default function Contact() {
                     pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                   })}/>
     {errors.email && (
-<span className='errorMessage'>Please enter a valid email address</span>
+<div className='errorMessage errPlacement'>Please enter a valid email address</div>
 )}
 
     <label for="subject">Subject</label>
@@ -101,7 +101,7 @@ export default function Contact() {
           })}
     >
 </textarea>
-{errors.message && <span className='errorMessage'>{errors.message.message}</span>}
+{errors.message && <div className='errorMessage errPlacement'>{errors.message.message}</div>}
 
     <input type="submit" value="Submit" />
   </form>

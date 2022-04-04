@@ -5,6 +5,16 @@ label{
   text-align: left;
 }
 
+.errorMessage{
+  color: #BE5F4B;
+  font-size: 15px;
+}
+.errPlacement{
+  position: relative;
+  left: 2px;
+  top: -14px;
+}
+
 .inputContact[type=text], select, textarea {
   width: 100%;
   padding: 12px;
