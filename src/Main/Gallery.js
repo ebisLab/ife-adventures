@@ -23,7 +23,7 @@ export default function Gallery() {
             width: '300px', 
             border: '5px solid white', 
             padding: '1%',
-          backgroundPosition: '55% 50%',
+          backgroundPosition: '55.1% 50%',
           background: `linear-gradient(rgba(0, 0, 0, 0.927),rgba(0, 0, 0, 0.5)) ,url("./img/img3_ife_edge.png")`,
           filter: `grayscale(100%)`,
         }}
@@ -31,7 +31,7 @@ export default function Gallery() {
           </div>
           <div
           style={{flex: '0 32%', height: '80px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
-          backgroundPosition: '40% 40%',
+          backgroundPosition: '40.1% 40%',
           background: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("./img/img4_ife.png")`,
           filter: `grayscale(100%)`,
         }} 
