@@ -14,7 +14,7 @@ export default function About() {
               src="./img/img5_ife.png"/>
       </div>
       <div>
-        <p><b>{title} is a children's book series by {author}.
+        <p><b>{title} is a children's book series by {author} Publication.
         </b></p>
         <p>
         Ife's Adventure book series is  told through the eyes of  Nigerian-American girl, Ife.  Ife guides the reader through numerous adventures she and her family & friends (Chinye, Wohali, Maryamm, Haru, Ramon, Deepa, John, Fiona, to name a few) get into. Readers will be engaged by the characters' personalities, trials, and successes while at the same time learning life lessons and values from the stories.
