@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Header/Header'
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
-import { Route, Switch } from 'react-router-dom';
+import { Routes,Route } from 'react-router-dom';
 import Menu from './Menu/Menu';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,41 +10,29 @@ import Shop from './pages/Shop';
 import BooksInSeries from './pages/BooksInSeries';
 import BibleInspiration from './pages/BibleInspiration';
 import Contact from './pages/Contact';
-import Products from './pages/Products';
+import Products from './pages/Products/Products';
+import HardCoverBooks from './pages/Products/HardCoverBooks';
 
 
 function App() {
   return (
-    <Route>
     <div className="App">
       <Menu  />
-      <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/shop">
-        <Shop />
-      </Route>
-      <Route path="/about">
-        <About/>
-      </Route>
-      <Route path="/books-in-series">
-        <BooksInSeries/>
-      </Route>
-      <Route path="/biblical-inspiration">
-        <BibleInspiration/>
-      </Route>
-      <Route path="/contact">
-        <Contact/>
-      </Route>
-      <Route path="/products">
-        <Products/>
+      <Routes>
+      <Route index element={<Home />} />
+      <Route path="/shop" element={<Shop />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/books-in-series" element={<BooksInSeries />} />
+      <Route path="/biblical-inspiration" element={<BibleInspiration/>} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/products" element={<Products/>}>
+        <Route index element={<HardCoverBooks/>} />
+        <Route path="coloring-books" element={<>Coloring Book</>} />
       </Route>
 
-      </Switch>
+      </Routes>
       <Footer />
     </div>
-    </Route>
   );
 }
 
