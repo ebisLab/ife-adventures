@@ -14,7 +14,9 @@ export default function Menu() {
   ]
   return (
     <div class="menu" style={{backgroundColor: 'white', width: '100%'}}> 
-              <Link to="/" style={{textDecoration: 'none', color: 'black',fontFamily: 'Lato, sans-serif', fontSize: '30px'}} >{title}</Link>
+              <Link to="/" 
+              className='logo'
+              style={{textDecoration: 'none', color: 'black', fontSize: '30px'}} >{title}</Link>
           {menu && menu.map(item=>item.id==5? (      
           <a href={item.url} class="menu__link">
         {item.name}
