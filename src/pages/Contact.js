@@ -13,8 +13,7 @@ export default function Contact() {
         reset,
         formState: { errors }
       } = useForm();
-    
-    
+     
       const toastifySuccess = () => {
         toast('Form sent!', {
           position: 'bottom-right',
@@ -52,7 +51,7 @@ export default function Contact() {
         }
       };
   return (
-      <div style={{padding: '5% 15% 5%'}}>
+      <div style={{padding: '5% 15% 5%', textAlign: 'left'}}>
           <h1>Contact Us</h1>
           <h3>Please allow 24-48 hours for a response from the team</h3>
 <div class="container">
