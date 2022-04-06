@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div style={{padding: '5% 15% 5%', background: 'white', textAlign: 'left'}}>
+    <div style={{padding: '5% 15% 5%', background: 'white', textAlign: 'left', minHeight: '75vh'}}>
         <div style={{display: 'inline-flex', justifyContent: 'center'}}>
           <img src="./img/img_about_ife.png" />
           <div style={{padding: '0 2%'}}>

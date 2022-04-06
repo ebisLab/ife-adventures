@@ -10,7 +10,9 @@ export default function Gallery() {
         // flexWrap: 'wrap',
         // justifyContent: 'space-between', 
         }}>
-          <Link to="/products"
+          <Link 
+          className='bookshadow'
+          to="/products"
           style={{flex: '0 32%', height: '80px', margin: '3% 5%', width: '300px', border: '5px solid white', padding: '1%',
           backgroundPosition: '50% 60%',
           backgroundImage: `url("./img/img1_ife.png")`}} 
@@ -23,9 +25,9 @@ export default function Gallery() {
             width: '300px', 
             border: '5px solid white', 
             padding: '1%',
-          backgroundPosition: '55% 50%',
-          background: `linear-gradient(rgba(0, 0, 0, 0.928),rgba(0, 0, 0, 0.5)) ,url("./img/img3_ife_edge.png")`,
-          filter: `grayscale(100%)`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.927),rgba(0, 0, 0, 0.5)), url("./img/img3_ife_edge.png") `,
+            backgroundPosition: '40% 40%',
+            filter: `grayscale(100%)`,
         }}
           ><span style={{background: '#ffffffb0'}}>Coloring Books</span>
           </div>

@@ -1,3 +1,22 @@
+.bookshadow{
+  box-shadow: 1px 0px 11px 0px rgba(21, 21, 21, 0.75);
+-webkit-box-shadow: 1px 0px 11px 0px rgba(21, 21, 21,0.75);
+-moz-box-shadow: 1px 0px 11px 0px rgba(21, 21, 21,0.75);
+-webkit-transition: -webkit-transform 0.2s;
+transition: -webkit-transform 0.2s;
+transition: transform 0.2s;
+transition: transform 0.2s, -webkit-transform 0.2s; /* Animation */
+}
+
+.bookshadow:hover{
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+ul a{
+  color: #8b939c;
+}
+
 .App {
   text-align: center;
 }

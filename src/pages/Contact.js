@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react'
 import contact from '../styles/contact.css'
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 
 export default function Contact() {
+    const [finished, setFinished]=useState(false)
+
     const {
         register,
         handleSubmit,
@@ -45,17 +47,20 @@ export default function Contact() {
             process.env.REACT_APP_USER_ID
           );
           reset();
-          toastifySuccess();
+        //   toastifySuccess();
+        setInterval(() => {
+            setFinished(true)
+          }, 800);
         } catch (e) {
           console.log(e);
         }
       };
   return (
-      <div style={{padding: '5% 15% 5%', textAlign: 'left'}}>
+      <div style={{padding: '2% 15% 5%', textAlign: 'left', height: '90vh'}}>
           <h1>Contact Us</h1>
           <h3>Please allow 24-48 hours for a response from the team</h3>
 <div class="container">
-  <form 
+  {finished?(<div>Success</div>):(<form 
           onSubmit={handleSubmit(onSubmit)} noValidate
 
   >
@@ -104,7 +109,7 @@ export default function Contact() {
 {errors.message && <div className='errorMessage errPlacement'>{errors.message.message}</div>}
 
     <input type="submit" value="Submit" />
-  </form>
+  </form>)}
 </div>
 </div>
   )

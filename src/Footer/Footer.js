@@ -13,14 +13,14 @@ export default function Footer() {
               <li><a href=""></a>Help</li>
               <li><a href=""></a>Contact Us</li>
           </ul> */}
-          <ul style={{listStyleType: 'none', textAlign: 'left'}}>
+          <ul className="footerLink" style={{listStyleType: 'none', textAlign: 'left'}}>
             <li><Link to="/books-in-series">Books in Series</Link></li>
             <li><Link to="/about">About The Author</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
 
           </ul>
       </div>
-      <div style={{color: 'white'}}>
+      <div style={{color: '#8b939c', fontSize:'12px', fontFamily: "'Roboto', sans-serif", paddingTop:'10px'}}>
           <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A {author} Publication. 
           All Rights Reserved. {title}.com is part of {author} Network.</p>
       </div>
