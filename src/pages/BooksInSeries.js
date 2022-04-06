@@ -1,10 +1,23 @@
-import React from 'react'
+import React from 'react';
+import butterfly from '../styles/butterfly.css'
 
 export default function BooksInSeries() {
   return (
     <div style={{backgroundColor: '#00b4ff'}}>
         <div style={{minHeight: '50vh'}}>
             <h1 style={{padding: '5% 15% 5%'}}>Coming Soon ..</h1>
+          
+            <div class="butterfly-rotate">
+              <div class="butterfly-box">
+                <div class="butterfly">
+                  <div class="wing wing-left"></div>
+                  <div class="main"></div>
+                  <div class="wing wing-right"></div>
+                </div>
+              </div>    
+            </div>
+
+
         </div>
         <div
             style={{
@@ -14,7 +27,7 @@ export default function BooksInSeries() {
             }}
             >
 
-            </div>
+        </div>
     </div>
   )
 }
