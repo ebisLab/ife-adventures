@@ -6,15 +6,7 @@ export default function Gallery() {
   <div style={{display: 'inline-flex', 
   padding: '5%'}}>
       <div style={{width: '43%'}}>
-          {/* <img src="./img/img1_ife.png" /> */}
-          {/* <div 
-          style={{
-            // backgroundImage: `url("./img/img1_ife.png")`, 
-            // height: '100px', width: '100%'
-            }}> */}
               <Link to="/shop"><img src="./img/img1_ife.png" width="100%" /></Link>
-
-          {/* </div> */}
       </div>
       <div style={{
         display: 'flex', 
