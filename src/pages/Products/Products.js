@@ -6,7 +6,7 @@ import Gallery from '../../Main/Gallery'
 export default function Products() {
   return (
     <div 
-    // style={{height: '80vh'}}
+    style={{minHeight: '80vh'}}
     >
             <Gallery/>
             <Outlet />

@@ -12,6 +12,7 @@ import BibleInspiration from './pages/BibleInspiration';
 import Contact from './pages/Contact';
 import Products from './pages/Products/Products';
 import HardCoverBooks from './pages/Products/HardCoverBooks';
+import ColoringBooks from './pages/Products/ColoringBooks';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/products" element={<Products/>}>
         <Route index element={<HardCoverBooks/>} />
-        <Route path="coloring-books" element={<>Coloring Book</>} />
+        <Route path="coloring-books" element={<ColoringBooks />} />
       </Route>
 
       </Routes>

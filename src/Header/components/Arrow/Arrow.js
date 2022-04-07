@@ -23,7 +23,7 @@ export default function Arrow() {
       fontSize: '20px',
     }}
     >
-      <span style={{background: '#00b4ff', fontFamily: "'Shadows Into Light Two', cursive", fontSize: '25px'}}>sign the mailing list for updates</span></h1>
+      <span style={{background: '#00b4ff', fontFamily: "'Shadows Into Light Two', Arial, sans-serif", fontSize: '25px'}}>sign the mailing list for updates</span></h1>
   </div>
 
 {/* <div id='warped'>

@@ -1,6 +1,6 @@
 import React from 'react'
-import Gallery2 from '../../Main/Gallery2'
 import { Link } from 'react-router-dom';
+import mpdf from './img/color1.pdf'
 
 export default function HardCoverBooks() {
 
@@ -24,18 +24,16 @@ export default function HardCoverBooks() {
     }]
   return (
     <div>
-        {/* <h1>Products coming really soon</h1> */}
         <div style={{
         display: 'flex', 
         flexWrap: 'wrap',
         textAlign:'center',
         justifyContent: 'center',
         minHeight: '60vh'
-        // justifyContent: 'space-between', 
         }}>
           <div
           style={{flex: '0 32%', 
-          maxHeight: '250px', 
+          maxHeight: '200px', 
           margin: '3% 5%', 
           width: '400px', 
           padding: '1%',
@@ -48,36 +46,69 @@ export default function HardCoverBooks() {
         }} 
           >
             <div style={{width: '200px'}}>
-            <Link to="/"><img className='bookshadow' src="./img/img1_ife.png" width="100%" /></Link>
-            </div>
+            <iframe src={mpdf} width="100%"  height="200px" 
+            frameBorder="0" 
+            />
+                </div>
+                
             <div style={{width: '200px', textAlign: 'left', paddingLeft:'20px', paddingTop: '15px'}}>
-                <div style={{fontSize: '16px'}}>Ife's Incredible Friends</div>
-                <div>★★★★★</div>
-            <div style={{paddingTop: '15px'}}>It's Ife's first day in school and there are many new things that Ife is learning. But will a misunderstanding with Wohali and an encounter with the Brute Twins ruin her day?
-            </div>
-            <div style={{display: 'inline-flex'}}>
+                <div style={{minHeight: '80px'}}>
+                    <div style={{fontSize: '16px'}}>
+Ife's Incredible Friends                    </div>
+<div style={{padding: '5% 0', fontSize:'20px'}} >Free</div>
+</div>
              <div
-                style={{padding: '2%' }} 
+                style={{margin: '3% 5%', padding: '1%' }} 
                 >
-                    <button style={{
-                        background: '#ff9900',
+                    <Link to="" download="http://localhost:3000/img/coloring/color1.pdf"><button style={{
+                        background: 'rgb(168, 203, 122)',
                         color: 'rgb(14 73 118)',
                         border: 'none',
-                        width: '80px',
+                        borderBottom:'6px solid rgb(119 145 86)',
+                        width: '100%',
                         height:' 50px',
-                    }}>Buy on Amazon</button>
+                    }}>Download</button></Link>
                 </div>
-                <div
-                style={{ padding: '2%' }} 
+            </div>
+        </div>
+        <div
+          style={{flex: '0 32%', 
+          maxHeight: '200px', 
+          margin: '3% 5%', 
+          width: '400px', 
+          padding: '1%',
+          borderRadius:'5px',
+          background: 'white',
+          display: 'inline-flex',
+          fontFamily:'Roboto,  sans-serif',
+          fontSize: '13px',
+          color: '#8b939c'
+        }} 
+          >
+            <div style={{width: '200px'}}>
+            {/* <iframe src="./img/coloring/color1.pdf" width="100%"  height="200px" 
+            frameBorder="0" 
+            /> */}
+                        <iframe src={mpdf} width="100%"  height="200px" 
+            frameBorder="0" 
+            />
+                </div>
+            <div style={{width: '200px', textAlign: 'left', paddingLeft:'20px', paddingTop: '15px'}}>
+                <div style={{}}>
+                    <div style={{fontSize: '16px'}}>Ten Things Ife wants You to Know About You</div>
+                <div style={{padding: '5% 0', fontSize:'20px'}}>$20</div>
+                </div>
+             <div
+                style={{margin: '3% 5%', padding: '1%' }} 
                 >
                     <button style={{
-                        background: 'rgb(89,163,100)',
-                        color: 'white',
+                        background: 'rgb(168, 203, 122)',
+                        color: 'rgb(14 73 118)',
                         border: 'none',
-                        width: '90px',
+                        borderBottom:'6px solid rgb(119 145 86)',
+                        width: '100%',
                         height:' 50px',
-                    }}>Buy on Barnes and Nobles</button>
-                </div>
+                    }}>Buy Now</button>
                 </div>
             </div>
         </div>
