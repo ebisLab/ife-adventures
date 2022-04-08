@@ -1,13 +1,25 @@
 import React from 'react';
 import butterfly from '../styles/butterfly.css'
-
+import comingsoon from '../img/image_series.png'
 export default function BooksInSeries() {
   return (
-    <div style={{backgroundColor: '#00b4ff'}}>
-        <div style={{minHeight: '50vh'}}>
-            <h1 style={{padding: '5% 15% 5%'}}>Coming Soon ..</h1>
+    <div style={{
+      // backgroundColor: '#00b4ff',
+      background: 'rgb(109, 58, 34)',
+    textAlign:'-webkit-center',
+      }}>
+        <div style={{height: '100vh', 
+        backgroundImage: `url(${comingsoon})`, 
+        backgroundSize: '100%',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: 'rgb(109, 58, 34)',
+        boxShadow: '25px 25px 50px 0 rgb(109 58 34) inset, -54px -25px 50px 0 rgb(109 58 34) inset',
+        width: '50%',
+        }}>
+          {/* <img src={comingsoon} width="50%" /> */}
           
-            <div class="butterfly-rotate">
+            {/* <div class="butterfly-rotate">
               <div class="butterfly-box">
                 <div class="butterfly">
                   <div class="wing wing-left"></div>
@@ -15,11 +27,11 @@ export default function BooksInSeries() {
                   <div class="wing wing-right"></div>
                 </div>
               </div>    
-            </div>
+            </div> */}
 
 
         </div>
-        <div
+        {/* <div
             style={{
               background:'rgb(168, 203, 122)',
               height: '200px',
@@ -27,7 +39,7 @@ export default function BooksInSeries() {
             }}
             >
 
-        </div>
+        </div> */}
     </div>
   )
 }
