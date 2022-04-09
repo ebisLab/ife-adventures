@@ -63,6 +63,7 @@ export default function HardCoverBooks() {
                         background: '#ff9900',
                         color: 'rgb(14 73 118)',
                         border: 'none',
+                        borderBottom: '10px solid #b17507',
                         width: '80px',
                         height:' 50px',
                     }}>Buy on Amazon</button>
@@ -74,6 +75,7 @@ export default function HardCoverBooks() {
                         background: 'rgb(89,163,100)',
                         color: 'white',
                         border: 'none',
+                        borderBottom: '10px solid rgb(49 89 55)',
                         width: '90px',
                         height:' 50px',
                     }}>Buy on Barnes and Nobles</button>
