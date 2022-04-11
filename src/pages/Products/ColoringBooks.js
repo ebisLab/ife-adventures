@@ -60,11 +60,15 @@ Ife's Incredible Friends                    </div>
              <div
                 style={{margin: '3% 5%', padding: '1%' }} 
                 >
-                    <Link to="" download="http://localhost:3000/img/coloring/color1.pdf"><button style={{
+                    <Link to="" download="http://localhost:3000/img/coloring/color1.pdf">
+                        <button                     className='prod-btn'
+                    className='prod-btn'
+
+                        style={{
                         background: 'rgb(168, 203, 122)',
                         color: 'rgb(14 73 118)',
-                        border: 'none',
-                        borderBottom:'6px solid rgb(119 145 86)',
+                        borderColor: 'rgb(119 145 86',
+                        // borderBottom:'6px solid rgb(119 145 86)',
                         width: '100%',
                         height:' 50px',
                     }}>Download</button></Link>
@@ -101,11 +105,12 @@ Ife's Incredible Friends                    </div>
              <div
                 style={{margin: '3% 5%', padding: '1%' }} 
                 >
-                    <button style={{
+                    <button 
+                    className='prod-btn'
+                    style={{
                         background: 'rgb(168, 203, 122)',
                         color: 'rgb(14 73 118)',
-                        border: 'none',
-                        borderBottom:'6px solid rgb(119 145 86)',
+                        borderColor: 'rgb(119 145 86)',
                         width: '100%',
                         height:' 50px',
                     }}>Buy Now</button>

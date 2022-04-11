@@ -1,0 +1,433 @@
+*:before, *:after {
+    content:'';
+    position: absolute;
+  }
+  /* body {margin:0} */
+  /* .wrap {
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+  } */
+  /* .container {
+    background: url(http://media.html5book.ru/background-1.jpg);
+    width: 600px;
+    height: 280px;
+    padding-top: 20px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+  } */
+  .girl {
+    position: relative;
+    left: 175px;
+    width: 110px;
+    float: left;
+    margin-right: 20px;
+  }
+  .boy {
+    position: relative;
+    width: 110px;
+    float: right;
+    right: 175px;
+  }
+  .head {
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    width: 100px;
+    height: 87px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f7f7f7;
+  }
+  .head:before {
+    top: 0;
+    left: 0;
+    height: 45px;
+    width: 50%;
+    border-bottom-right-radius: 40px 25px;
+    background: #784820;
+  }
+  .boy .head:before {
+    width: 75%;
+    border-bottom-right-radius: 60px 25px;
+  }
+  .head:after {
+    top: 0px;
+    left: 50%;
+    height: 45px;
+    width: 50%;
+    border-bottom-left-radius: 40px 25px;
+    background: #784820;
+  }
+  .boy .head:after {
+    width: 25%;
+    left: 75%;
+    border-bottom-left-radius: 40px 35px;
+  }
+  .top {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #784820;
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .hands {
+    position: absolute;
+    top: 115px;
+    left: 20px;
+    width: 70px;
+    height: 46px;
+    border-radius: 10px;
+    background: #f7f7f7;
+  }
+  .boy .hands {
+    background: linear-gradient(#e3512d 10px, #f7f7f7 10px);
+  }
+  .dress {
+    position: absolute;
+    top: 115px;
+    left: 30px;
+    width: 50px;
+    height: 57px;
+    background: #e3512d;
+  }
+  .dress:before {
+    bottom: 14px;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: #784820;
+  }
+  .boy .dress:before {
+    bottom: 0;
+    height: 14px;
+  }
+  .dress:after {
+    top: 3px;
+    left: 17px;
+    height: 12px;
+    width: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: white;
+  }
+  .leg {
+    position: absolute;
+    top: 172px;
+    width: 17px;
+    height: 30px;
+    background: #f7f7f7;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
+  .leg:before {
+   bottom: 0;
+    left: 0;
+    height: 16px;
+    width: 100%;
+    background: linear-gradient(to top, black 10px, #f7f7f7 10px, #f7f7f7 13px, black 13px);
+  }
+  .boy .leg:before {
+    background: linear-gradient(to top, black 10px, #784820 10px);
+    height: 30px;
+  }
+  .left {
+    left: 30px;
+  }
+  .right {
+    right: 30px;
+  }
+  .eye {
+    position: absolute;
+    top: 50px;
+    height: 5px;
+    width: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: 2px solid black;
+    border-top-color: transparent;
+  }
+  .eye:before {
+    top: -2px;
+    height: 1px;
+    width: 3px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 2px solid black;
+    border-top-color: transparent;
+  }
+  .boy .eye:before {
+    z-index: 2;
+    top: -11px;
+    height: 17px;
+    width: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: 4px solid black;
+    border-top-color: black;
+  }
+  .left-eye:before {
+    left: -7px;
+  }
+  .right-eye:before {
+    right: -7px;
+  }
+  .boy .left-eye:before {
+    left: -11px;
+  }
+  .boy .right-eye:before {
+    right: -11px;
+  }
+  .eye:after {
+    z-index: 1;
+    bottom: -18px;
+    left: 2px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #e3512d
+  }
+  .left-eye {
+    left: 16px;
+  }
+  .right-eye {
+    right: 16px;
+  }
+  .ears {
+    position: absolute;
+    top: 80px;
+    width: 110px;
+    height: 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+  }
+  .mouth {
+    position: absolute;
+    top: 68px;
+    left: 41px;
+    height: 5px;
+    width: 14px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: 2px solid black;
+    border-top-color: transparent;
+  }
+  .boy .mouth:before {
+    width: 10px;
+    height: 2px;
+    top: -2px;
+    left: 2px;
+    background: linear-gradient(to left, #784820 4px, white 4px, white 6px, #784820 6px);
+  }
+  .boy .mouth:after {
+    top: 12px;
+    left: 1px;
+    height: 5px;
+    width: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background: #784820;
+  }
+  .nose {
+    position: absolute;
+    top: 55px;
+    left: 46px;
+    height: 7px;
+    width: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 2px solid black;
+    border-top-color: transparent;
+  }
+  .boy .nose {
+    top: 42px;
+    height: 17px;
+  }
+  .boy .nose:before {
+    width: 10px;
+    height: 4px;
+    top: -3px;
+    left: -2px;
+    background: black
+  }
+  .grass {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    background: #c9c9bf;
+    border-radius: 100% 100% 0 0;
+    box-shadow: inset 1px 1px 20px #aca08e
+  }
+  .grass:before, .grass:after {
+    top: 75px;
+    width: 140px;
+    height: 140px;
+    background: #c9c9bf;
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 20px #aca08e
+  } 
+  .grass:before {
+    left: -60px
+  }
+  .grass:after {
+    height: 160px;
+    width: 200px;
+    top: 65px;
+    right: -60px;
+    z-index: 5;
+  }
+  .flower {
+    width: 26px;
+    height: 10px;
+    background: #e3512d;
+    position: relative;
+    border-radius: 10px;
+    top: 50px;
+    left: 130px;
+  }
+  .flower:before{
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 10px;
+    background: #e3512d;
+    border-radius: 10px;
+    transform: rotate(60deg)
+  }
+  .flower:after {
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 10px;
+    background: #e3512d;
+    border-radius: 10px;
+    transform: rotate(-60deg)
+  }
+  .stem {
+    width: 2px;
+    height: 15px;
+    background: #828387;
+    position: absolute;
+    top: 15px;
+    left: 12px
+  }
+  .stem:before {
+    top: 7px;
+    left: 2px;
+    width: 16px;
+    height: 8px;
+    background: #828387;
+    border-radius: 50% 50% 50% 0;
+  }
+  .stem:after{
+    top: 7px;
+    left: -16px;
+    width: 16px;
+    height: 8px;
+    background: #828387;
+    border-radius: 50% 50% 0 50%;
+  }
+  .two.flower {
+    top: 10px;
+    left: 630px;
+  }
+  .three.flower {
+    top: 25px;
+    left: 480px;
+  }
+
+  .four.flower {
+    top: 25px;
+    left: 780px;
+  }
+
+  .five.flower {
+    top: 5px;
+    left: 880px;
+  }
+
+  .six.flower {
+    top: 25px;
+    left: 1080px;
+  }
+
+  .seven.flower {
+    top: 0px;
+    left: 1280px;
+  }
+  .flower span {
+    z-index: 3;
+    position: absolute;
+    top: -14px;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f7f7f7;
+  } 
+  .left-container {
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+  }
+  .right-container {
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    right: 0;
+    top: 200px;
+  }
+  .left-container span, .right-container span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    text-align: center;
+    line-height: 15px;
+  }
+  .left-container span {animation: zz 2s linear infinite}
+  .left-container .s1 {margin-left: 60px;}
+  .left-container .s2 {margin-left: 42px; margin-top: -8px;}
+  .left-container .s3 {margin-left: 26px; margin-top: -6px;}
+  .left-container .s4 {margin-left: 11px; margin-top: -2px;}
+  .right-container span {animation: zzz 2s linear infinite;}
+  .right-container .s1 {margin-left: 2px;}
+  .right-container .s2 {margin-left: 21px; margin-top: -8px;}
+  .right-container .s3 {margin-left: 39px; margin-top: -6px;}
+  .right-container .s4 {margin-left: 52px; margin-top: -1px;}
+  .right-container .s5 {margin-left: 65px;}
+  .container:hover .left-container {display: none;}
+  .container:hover .right-container {display: none;}
+  
+  /* .parent {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.parent::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(168, 203, 122);
+}
+
+
+.inner {
+    display: flex;
+    position: relative;
+    align-items: center; 
+    justify-content: center;
+    z-index: 1;
+  } */

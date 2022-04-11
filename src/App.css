@@ -59,3 +59,15 @@ outline: none;
     transform: rotate(360deg);
   }
 }
+
+.prod-btn{
+  border: none;
+  border-bottom: 10px solid green;
+}
+
+.prod-btn:hover{
+  height: 44px;
+  margin-top: 4px;
+  border-bottom: 6px solid green;
+  transition: all .1s ease-in;
+}

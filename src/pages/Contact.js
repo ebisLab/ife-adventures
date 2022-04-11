@@ -108,7 +108,10 @@ export default function Contact() {
 </textarea>
 {errors.message && <div className='errorMessage errPlacement'>{errors.message.message}</div>}
 
+<div style={{height: '44px'}}>
+
     <input type="submit" value="Submit" style={{borderBottom: '10px solid green'}} />
+    </div>
   </form>)}
 </div>
 </div>

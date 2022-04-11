@@ -57,26 +57,27 @@ export default function HardCoverBooks() {
             </div>
             <div style={{display: 'inline-flex'}}>
              <div
-                style={{padding: '2%' }} 
+                style={{padding: '5% 0 0% 0%' }} 
                 >
-                    <button style={{
+                    <button 
+                       className='prod-btn'
+                    style={{
                         background: '#ff9900',
                         color: 'rgb(14 73 118)',
-                        border: 'none',
-                        borderBottom: '10px solid #b17507',
-                        width: '80px',
+                        borderColor: '#b17507',
                         height:' 50px',
                     }}>Buy on Amazon</button>
                 </div>
                 <div
-                style={{ padding: '2%' }} 
+                style={{ padding: '5% 0 0 5%' }} 
                 >
-                    <button style={{
+                    <button 
+                    className='prod-btn'
+                    style={{
                         background: 'rgb(89,163,100)',
                         color: 'white',
-                        border: 'none',
-                        borderBottom: '10px solid rgb(49 89 55)',
-                        width: '90px',
+                        borderColor: 'rgb(49 89 55)',
+                        width: '100%',
                         height:' 50px',
                     }}>Buy on Barnes and Nobles</button>
                 </div>

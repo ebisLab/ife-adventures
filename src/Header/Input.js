@@ -64,16 +64,29 @@ export default function Input() {
 }}>
           <div
           style={{
-            // height: '3em',
-            marginTop:'5%',
-            marginLeft: '10px',
-            border: '1px solid rgb(220, 219, 235)',
-            borderRadius: '20px',
-            fontSize: '13px',
-            padding: '10px 15px 10px 10px',
-            color: '#000',
-            background:'white',
-            transition: 'all .15s ease-in',
+            // marginTop:'5%',
+            // marginLeft: '10px',
+            // left: '35',
+            // position: 'relative',
+            // border: '1px solid rgb(220, 219, 235)',
+            // borderRadius: '20px',
+            // fontSize: '13px',
+            // padding: '10px 15px 10px 10px',
+            // color: '#000',
+            // background:'white',
+            // transition: 'all .15s ease-in',
+            marginTop: '5%',
+    marginLeft: '10px',
+    left: '5%',
+    border: '1px solid rgb(220, 219, 235)',
+    borderRadius: '20px',
+    fontSize: '13px',
+    padding: '10px 15px 10px 10px',
+    color: 'rgb(0, 0, 0)',
+    background: 'white',
+    position: 'relative',
+    top: '1px',
+    display: 'flex'
           }}
           >
             <input 
@@ -118,10 +131,9 @@ export default function Input() {
             {/* {errors.email && (
               <span className='errorMessage'>Please enter a valid email address</span>
             )} */}
-            <button
+            {/* <button
             type="submit"
             style={{
-              // height: '3em',
               cursor: 'pointer',
               width: '100px',
               border: 'none',
@@ -132,11 +144,18 @@ export default function Input() {
               background:'rgb(95, 63, 211) ',
               transition: 'all .15s ease-in',
             }}
-            >Send</button>
+            >Send</button> */}
+            <div style={{height: '44px'}}>
+            <input className="submit-hover" type="submit" value="Submit" 
+            // style={{  transition: 'all .1s ease-in'}}
+            />
+            </div>
+
+
           </div>
         </form>
               <ToastContainer/>
-<div style={{height:"15px"}}>
+<div style={{height:"15px", marginLeft:'6%'}}>
 {errors.name && <span style={{color: '#BE5F4B', padding: '0 2%', fontSize: '15px'}} className='errorMessage'>{errors.name.message}</span>}
 {errors.email && (
               <span style={{color: '#BE5F4B', padding: '0 2%', fontSize: '15px'}}  className='errorMessage'>Please enter a valid email address</span>
