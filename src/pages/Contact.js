@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import { Link } from 'react-router-dom';
 
 
 export default function Contact() {
@@ -41,8 +42,8 @@ export default function Contact() {
             reply_to: 'Dr. Tee-Tee'
           };
           await emailjs.send(
-            process.env.REACT_APP_CONTACT_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATE_ID,
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_CONTACTPAGE_TEMPLATE_ID,
             templateParams,
             process.env.REACT_APP_USER_ID
           );
@@ -114,6 +115,11 @@ export default function Contact() {
     </div>
   </form>)}
 </div>
+{finished?<div style={{padding: '3% 0'}}>
+  <Link to="/">
+  <input type="submit" value="Back Home" style={{borderBottom: '10px solid green'}} />
+</Link>
+  </div>:<></>}
 </div>
   )
 }
