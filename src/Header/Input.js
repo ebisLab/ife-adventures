@@ -86,7 +86,8 @@ export default function Input() {
     background: 'white',
     position: 'relative',
     top: '1px',
-    display: 'flex'
+    display: 'flex', 
+    width: '90%'
           }}
           >
             <input 
@@ -103,6 +104,7 @@ export default function Input() {
             })}
             style={{
               border: 'none',
+              width:'35%',
               fontSize: '13px',
               padding: '10px',
               color: '#000',
@@ -122,6 +124,7 @@ export default function Input() {
             })}
             style={{
               border: 'none',
+              width: '35%',
               fontSize: '13px',
               padding: '10px',
               color: '#000',
