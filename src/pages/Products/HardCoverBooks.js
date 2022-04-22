@@ -70,7 +70,7 @@ export default function HardCoverBooks() {
                     }}>Buy on Amazon</button>
                     </a>
                 </div>
-                <div
+                {/* <div
                 style={{ padding: '5% 0 0 5%' }} 
                 >
                     <button 
@@ -82,7 +82,7 @@ export default function HardCoverBooks() {
                         width: '100%',
                         height:' 50px',
                     }}>Buy on Barnes and Nobles</button>
-                </div>
+                </div> */}
                 </div>
             </div>
         </div>
