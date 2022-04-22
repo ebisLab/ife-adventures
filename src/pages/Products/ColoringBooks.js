@@ -75,7 +75,7 @@ Ife's Incredible Friends                    </div>
                 </div>
             </div>
         </div>
-        <div
+        {/* <div
           style={{flex: '0 32%', 
           maxHeight: '200px', 
           margin: '3% 5%', 
@@ -90,9 +90,6 @@ Ife's Incredible Friends                    </div>
         }} 
           >
             <div style={{width: '200px'}}>
-            {/* <iframe src="./img/coloring/color1.pdf" width="100%"  height="200px" 
-            frameBorder="0" 
-            /> */}
                         <iframe src={mpdf} width="100%"  height="200px" 
             frameBorder="0" 
             />
@@ -116,7 +113,7 @@ Ife's Incredible Friends                    </div>
                     }}>Buy Now</button>
                 </div>
             </div>
-        </div>
+        </div> */}
         {/* {books.map(item=>(
             <div
             style={{flex: '0 32%', 
