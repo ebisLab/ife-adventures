@@ -5,8 +5,9 @@ import {Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-  <div style={{backgroundColor: 'black'}} ><div style={{backgroundColor: 'black', display: 'inline-flex'}}>
-      <div style={{color: 'white', width:"33%"}}>
+  <div style={{backgroundColor: 'black'}} >
+    <div style={{backgroundColor: 'black', display: 'inline-flex', width: '100%', justifyContent: 'center'}}>
+      <div style={{color: 'white', width:'20%'}}>
           {/* <ul style={{listStyleType: 'none'}}>
               <li><a href="">Privacy Policy</a></li>
               <li><a href=""></a>Terms of Use</li>
@@ -21,8 +22,9 @@ export default function Footer() {
           </ul>
       </div>
       <div style={{color: '#8b939c', fontSize:'12px', fontFamily: "'Roboto', sans-serif", paddingTop:'10px'}}>
-          <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A {author} Publication. 
-          All Rights Reserved. {title}.com is part of {author} Network.</p>
+          <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A {author} Publication.
+          <br/>All Rights Reserved.
+          {title}.com is part of {author} Network.</p>
       </div>
 
   </div>
