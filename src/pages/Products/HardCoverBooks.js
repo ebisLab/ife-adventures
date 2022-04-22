@@ -59,6 +59,7 @@ export default function HardCoverBooks() {
              <div
                 style={{padding: '5% 0 0% 0%' }} 
                 >
+                  <a href="https://www.amazon.com/Together-Incredible-Friends-Adventures-Tee-Tee/dp/B09Y9PY7VV/ref=sr_1_1?crid=3BA6FE9JAY2F4&keywords=ife%27s+incredible+friends&qid=1650631154&sprefix=ife%27s+incredible+friends%2Caps%2C149&sr=8-1">
                     <button 
                        className='prod-btn'
                     style={{
@@ -67,6 +68,7 @@ export default function HardCoverBooks() {
                         borderColor: '#b17507',
                         height:' 50px',
                     }}>Buy on Amazon</button>
+                    </a>
                 </div>
                 <div
                 style={{ padding: '5% 0 0 5%' }} 
