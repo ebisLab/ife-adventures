@@ -60,7 +60,7 @@ Ife's Incredible Friends                    </div>
              <div
                 style={{margin: '3% 5%', padding: '1%' }} 
                 >
-                    <Link to="" download="http://localhost:3000/img/coloring/color1.pdf">
+                    <Link to={mpdf} target="_blank" download>
                         <button                     className='prod-btn'
                     className='prod-btn'
 
