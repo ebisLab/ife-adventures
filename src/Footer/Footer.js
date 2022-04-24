@@ -22,7 +22,7 @@ export default function Footer() {
           </ul>
       </div>
       <div style={{color: '#8b939c', fontSize:'12px', fontFamily: "'Roboto', sans-serif", paddingTop:'10px'}}>
-          <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A {author} Publication.
+          <p>Use of this site signifies your agreement to the Terms of Use. TM ∓ © 2022 {title}. A {author} Publishings.
           <br/>All Rights Reserved.
           {title}.com is part of {author} Network.</p>
       </div>

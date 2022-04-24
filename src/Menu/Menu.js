@@ -8,7 +8,7 @@ export default function Menu() {
     {id: 2, name: 'About The Author', url: '/about'},
     {id: 3, name: 'Series', url: '/books-in-series'},
     {id: 4, name: 'Biblical Inspiration', url: '/biblical-inspiration'},
-    {id: 5, name: 'Ife Journal Entries', url: 'https://ifesinsightsandadventures.blogspot.com/'},
+    {id: 5, name: "Ife's Diary", url: '/ife-diary'},
     {id: 6, name: 'Products', url: '/products'},
     {id: 7, name: 'Contact', url: '/contact'}
   ]

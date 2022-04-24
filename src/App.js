@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Products from './pages/Products/Products';
 import HardCoverBooks from './pages/Products/HardCoverBooks';
 import ColoringBooks from './pages/Products/ColoringBooks';
+import Diary from './pages/Diary';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path="/books-in-series" element={<BooksInSeries />} />
       <Route path="/biblical-inspiration" element={<BibleInspiration/>} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/ife-diary" element={<Diary />} />
       <Route path="/products" element={<Products/>}>
         <Route index element={<HardCoverBooks/>} />
         <Route path="coloring-books" element={<ColoringBooks />} />

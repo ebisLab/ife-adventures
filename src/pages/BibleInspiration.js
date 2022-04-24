@@ -7,7 +7,15 @@ export default function BibleInspiration() {
   return (
     <div style={{backgroundColor: '#00b4ff'}}>
     <div style={{minHeight: '50vh'}}>
-        <h1 style={{padding: '5% 15% 5%'}}>Coming Soon ..</h1>
+        {/* <h1 style={{padding: '5% 15% 5%'}}>Coming Soon ..</h1> */}
+
+        <section style={{padding: '5% 15% 5%', textAlign: 'left'}}>
+            <a href="https://ifesinsightsandadventures.blogspot.com/2022/04/biblical-inspiration-testimony-time.html">
+        <h2>Diary entry #2:</h2> 
+        <p>
+        Biblical Inspiration: TESTIMONY TIME!!!! Interview with the Author Dr. Tee-Tee        </p>
+        </a>
+        </section>
 {/*                   
             <div class="butterfly-rotate">
               <div class="butterfly-box">
