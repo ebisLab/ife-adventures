@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 const app = express();
-const port = 5000;
+const port = 3000;
 
 const SITE_SECRET = process.env.PORT || process.env.REACT_APP_CAPTCHA_KEY;
 

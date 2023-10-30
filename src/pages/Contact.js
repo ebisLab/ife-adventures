@@ -12,6 +12,7 @@ export default function Contact() {
   const [recaptchaValue, setRecaptchaValue] = useState(null);
   const captchaRef = React.useRef(null);
   const [captchaError, setCaptchaError] = useState(null);
+  const sitePort = process.env.PORT || 3000;
 
   const onRecaptchaChange = (value) => {
     setRecaptchaValue(value);
@@ -41,7 +42,7 @@ export default function Contact() {
       setCaptchaError("Please verify reCAPTCHA");
       return;
     } else {
-      const res = await fetch("http://localhost:5000/contact/verify", {
+      const res = await fetch(`http://localhost:${sitePort}/contact/verify`, {
         method: "POST",
         body: JSON.stringify({ recaptchaValue }),
         headers: {
